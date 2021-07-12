@@ -4,7 +4,9 @@ package com.antoniusharpen.usercrudproject.Model;
 import com.google.gson.annotations.SerializedName;
 
 public class User {
+    @SerializedName("id")
     private String id;
+    @SerializedName("first_name")
     private String nama1;
 
     public String getId() {
@@ -39,7 +41,9 @@ public class User {
         this.email = email;
     }
 
+    @SerializedName("last_name")
     private String nama2;
+    @SerializedName("email")
     private String email;
 
     public User(){}
